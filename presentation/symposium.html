@@ -16,7 +16,11 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Pendula of Atomic Collisions</section>
+				<section>
+                                    <p>Pendula of Atomic Collisions</p>
+                                    <img src="imgs/cover.svg" />
+                                    <div style="position: absolute; bottom:0; right:0; font-size:12pt;">Matthew Chilcott<br />DWC Symposion 2021</div>
+                                </section>
 				<section><!-- Motivation -->
                                     <section>Collisions help us probe the unknowns</section>
                                     <section>Cold collisions are sensitive to atomic properties</section>
@@ -25,7 +29,7 @@
                                     <section>Cold is slow</section>
                                     <section>Optical Collider</section>
                                     <section>Aftermath</section>
-                                    <section>Aftermath</section>
+                                    <section><img src="imgs/AtomImage.svg"/></section>
 				</section>
 				<section><!-- Resonances-->
                                     <section>Resonances are changes in the cross-section</section>
@@ -35,9 +39,30 @@
                                     <section>We examine a system with both, simultaneously in play</section>
 				</section>
                                 <section><!-- What we observe -->
-                                    <section>Shape Change</section>
-                                    <section>Broadening</section>
-                                    <section>Shift</section>
+                                    <section>
+                                        <p>We observe changes in the resonance profile</p>
+                                        <img src="imgs/BeutlerFano.svg" />
+                                    </section>
+                                    <section>
+                                        <p style="font-size: 20pt;">\[
+                                            {\color{blue}{\sigma(B, E)}} = \frac{2\pi\hbar}{mE}\sin^2\left(
+                                                {\color{purple}{\delta_\text{bg}(E)}} +  \tan^{-1}\left[\frac{{\color{orange}{\Gamma(E)}} / 2}{B - {\color{pink}{B_\text{res}(E)}}}\right]
+                                                \right)\]
+                                        </p>
+                                        <img src="imgs/BFParameters.svg" />
+                                    </section>
+                                    <section>
+                                        <p>Phase Winding = Shape change</p>
+                                        <img src="imgs/ResonancePhase.svg" />
+                                    </section>
+                                    <section>
+                                        <p>The resonance broadens</p>
+                                        <img src="imgs/ResonanceWidth.svg" />
+                                    </section>
+                                    <section>
+                                        <p>The resonance shifts</p>
+                                        <img src="imgs/ResonancePosition.svg" />
+                                    </section>
                                 </section>
                                 <section><!-- QDT -->
                                     <section>Open/Closed channel effect separation</section>
@@ -46,16 +71,28 @@
                                     <section>Shift is phase change</section>
                                 </section>
                                  <section><!-- Pendula -->
-                                    <section>Two channels to two pendula</section>
+                                    <section>
+                                        <p>Two channels $\quad\Rightarrow\quad$ two pendula</p>
+                                        <img width="100%" src="imgs/pendula.svg" />
+                                        <p style="font-size:20pt;">\[\ddot{\vec{x}}
+  + \begin{bmatrix}\gamma_1&0\\0&\gamma_2\end{bmatrix}\dot{\vec{x}}
+    + \begin{bmatrix}\omega_1^2&\nu\\\nu&\omega_2^2\end{bmatrix} \vec{x}
+      = \begin{bmatrix}Ae^{\text{i}\omega t}\\0\end{bmatrix}\]</p>
+                                    </section>
                                     <section>Resonance enhancement is broadening</section>
                                     <section>Phase shift is first Resonance phase</section>
                                     <section>Shift appears</section>
-                                </section> 
+                                </section>
+                                <section>
+                                <section><img src="imgs/group.jpg"></section>
+                                <section></section>
+                                </section>
 			</div>
 		</div>
 
 		<script src="reveal/dist/reveal.js"></script>
 		<script src="reveal/plugin/notes/notes.js"></script>
+		<script src="reveal/plugin/math/math.js"></script>
 		<script src="reveal/plugin/markdown/markdown.js"></script>
 		<script src="reveal/plugin/highlight/highlight.js"></script>
 		<script>
@@ -63,11 +100,12 @@
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
 			Reveal.initialize({
-				hash: true,
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
+				controls: false,
+                                progress: false,
+                                navigationMode: 'linear',
+                                // Learn about plugins: https://revealjs.com/plugins/
+                                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+                        });
 		</script>
 	</body>
 </html>
