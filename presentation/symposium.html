@@ -95,13 +95,18 @@
           <section>
             <img src="imgs/cover.svg" />
           </section>
-          <section>
+            <section data-auto-animate>
             <p>Two channels $\quad\Rightarrow\quad$ two pendula</p>
-            <img width="100%" src="imgs/pendula.svg" />
-            <p style="font-size:20pt;">\[\ddot{\vec{x}}
-              + \begin{bmatrix}\gamma_1&0\\0&\gamma_2\end{bmatrix}\dot{\vec{x}}
-              + \begin{bmatrix}\omega_1^2&\nu\\\nu&\omega_2^2\end{bmatrix} \vec{x}
-              = \begin{bmatrix}Ae^{\text{i}\omega t}\\0\end{bmatrix}\]</p>
+            <img width=70% src="imgs/pendula.svg" />
+          </section>
+          <section data-auto-animate>
+            <p>Two channels $\quad\Rightarrow\quad$ two pendula</p>
+            <img width="45%" style="margin-right:10pt;" src="imgs/pendula.svg" /><img width="45%" src="imgs/PendulumScattering.svg" />
+            <p style="font-size:20pt;">\[
+            \ddot{\vec{x}}
+              + {\color{PSpink}\begin{bmatrix}\gamma_1&0\\0&\gamma_2\end{bmatrix}}\dot{\vec{x}}
+              + \begin{bmatrix}\omega_1^2&{\color{PSblue}\nu}\\{\color{PSblue}\nu}&\omega_2^2\end{bmatrix} \vec{x}
+              = \begin{bmatrix}Ae^{\text{i}{\color{PSorange}\omega} t}\\0\end{bmatrix}\]</p>
           </section>
           <section><p>Resonance enhancement is broadening</p><img width="45%" src="imgs/PendulaWidth.svg" /><video autoplay loop width="45%" src="imgs/Pendula.mp4" onclick="this.paused ? this.play() : this.pause();"></video></section>
           <section><p>Phase shift is first Resonance phase</p><img src="imgs/PendulaPhase.svg" /></section>
