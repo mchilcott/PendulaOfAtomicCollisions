@@ -1,5 +1,8 @@
 # Adapted from https://github.com/dhaitz/matplotlib-stylesheets
 # Also worth seeing https://github.com/matplotlib/matplotlib/blob/master/lib/matplotlib/mpl-data/stylelib/dark_background.mplstyle
+# Just add 
+#>  plt.style.use('https://raw.githubusercontent.com/mchilcott/PendulaOfAtomicCollisions/main/presentation/plots.mplstyle')
+# to the top of plotting script
 
 # Seaborn common parameters
 # .15 = dark_gray
