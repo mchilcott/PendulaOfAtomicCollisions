@@ -1,130 +1,130 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>Pendula of Atomic Collisions - Matthew Chilcott</title>
+    <title>Pendula of Atomic Collisions - Matthew Chilcott</title>
 
-		<link rel="stylesheet" href="reveal/dist/reset.css">
-		<link rel="stylesheet" href="reveal/dist/reveal.css">
-		<link rel="stylesheet" href="reveal/dist/theme/black.css">
+    <link rel="stylesheet" href="reveal/dist/reset.css">
+    <link rel="stylesheet" href="reveal/dist/reveal.css">
+    <link rel="stylesheet" href="reveal/dist/theme/black.css">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="reveal/plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-                                    <p>Pendula of Atomic Collisions</p>
-                                    <img src="imgs/cover.svg" />
-                                    <div style="position: absolute; bottom:0; right:0; font-size:12pt;">Matthew Chilcott<br />DWC Symposion 2021</div>
-                                </section>
-				<section><!-- Motivation -->
-                                    <section>Understanding atomic interactions is a core area of exploration</section>
-                                    <section>Collisions measure the interaction</section>
-				</section>
-				<section><!-- What we do -->
-                                    <section>Cold is slow</section>
-                                    <section>Optical Collider</section>
-                                    <section><img src="imgs/AtomImage.svg"/></section>
-				</section>
-				<section><!-- Resonances-->
-                                    <section><p>Resonances are changes in the scattering</p><img src="imgs/BeutlerFano283uK.svg" /></section>
-                                    <section><p>Shape resonances appear in energy: open channel</p><img src="imgs/PotentialsShape.svg" /></section>
-                                    <section><p>Feshbach resonances in magnetic field: Closed channel</p><img src="imgs/PotentialsFeshbach.svg" /></section>
-                                    <section><p>We examine a system with both, simultaneously in play</p><img src="imgs/PotentialsFull.svg" /></section>
-				</section>
-                                <section><!-- What we observe -->
-                                    <section>
-                                        <p>We observe changes in the resonance profile</p>
-                                        <img src="imgs/BeutlerFano.svg" />
-                                        
-                                    </section>
-                                    <section>
-                                        <p style="font-size: 20pt;">\[
-                                            {\color{blue}{\sigma(B, E)}} = \frac{2\pi\hbar}{mE}\sin^2\left(
-                                                {\color{purple}{\delta_\text{bg}(E)}} +  \tan^{-1}\left[\frac{{\color{orange}{\Gamma(E)}} / 2}{B - {\color{pink}{B_\text{res}(E)}}}\right]
-                                                \right)\]
-                                        </p>
-                                        <img src="imgs/BFParameters.svg" />
-                                    </section>
-                                    <section data-auto-animate>
-                                        <p>Phase Winding = Shape change</p>
-                                        <img src="imgs/BeutlerFano.svg" width="45%"/>
-                                        <img src="imgs/ResonancePhase.svg" width="45%" />
-                                    </section>
-                                    <section data-auto-animate>
-                                        <p>Phase Winding = Shape change</p>
-                                        <img src="imgs/ResonancePhase.svg" width="45%" />
-                                        <video autoplay loop width="45%" src="imgs/AnimatedQSweep.mp4" onclick="this.paused ? this.play() : this.pause();"></video>
-                                    </section>
-                                    <section>
-                                        <p>The resonance broadens</p>
-                                        <img src="imgs/BeutlerFano.svg" width="45%"/>
-                                        <img src="imgs/ResonanceWidth.svg" width="45%" />
-                                    </section>
-                                    <section  data-auto-animate>
-                                        <p>The resonance shifts</p>
-                                        <img src="imgs/BeutlerFano.svg" width="45%"/>
-                                        <img src="imgs/ResonancePosition.svg" width="45%" />
-                                    </section>
-                                    <section  data-auto-animate>
-                                        <p>The resonance shifts</p>
-                                        <img src="imgs/ResonancePosition.svg" width="45%" style="margin-bottom:100px;"/>
-                                        <img src="imgs/TheoryCentre.svg" width="45%" />
-                                    </section>
-                                </section>
-                                <section><!-- QDT -->
-                                    <section data-auto-animate><p>Quantum Defect Theory: Open Channel</p><img src="imgs/QDTExplained.svg" /><p style="font-size:15pt;">\[  \begin{pmatrix} f \\ g \end{pmatrix} =
-  \begin{pmatrix} C^{-1} & 0 \\ C \tan \lambda & C \end{pmatrix}
-  \begin{pmatrix} \hat{f} \\ \hat{g} \end{pmatrix}\]</p></section>
-                                    <section data-auto-animate><p>QDT parameters</p><p style="font-size:20pt;">\[  \begin{pmatrix} f \\ g \end{pmatrix} =
-  \begin{pmatrix} C^{-1} & 0 \\ C \tan \lambda & C \end{pmatrix}
-  \begin{pmatrix} \hat{f} \\ \hat{g} \end{pmatrix}\]</p><img src="imgs/tlc2.svg" /></section>
-                                    <section data-auto-animate><p>Broadening is wavefunction enhancement at short range</p><p style="font-size:20pt;">\[ \Gamma(E) = C^{-2}(E) \bar{\Gamma}_B \]</p><img width="45%" src="imgs/tlc2.svg" /><img width="45%" src="imgs/ResonanceWidth.svg" /></section>
-                                    <section data-auto-animate><p>Shift is phase change</p><p style="font-size:20pt;">\[B_\text{res}(E) = B_0 + \frac{E}{\delta\mu} - \frac{\bar{\Gamma}_B}{2} \tan\lambda\]</p><img width="45%" src="imgs/tlc2.svg" /><img width="45%" src="imgs/ResonancePosition.svg" /></section>
-                                </section>
-                                 <section><!-- Pendula -->
-                                    <section>
-                                        <img src="imgs/cover.svg" />
-                                    </section>
-                                    <section>
-                                        <p>Two channels $\quad\Rightarrow\quad$ two pendula</p>
-                                        <img width="100%" src="imgs/pendula.svg" />
-                                        <p style="font-size:20pt;">\[\ddot{\vec{x}}
-  + \begin{bmatrix}\gamma_1&0\\0&\gamma_2\end{bmatrix}\dot{\vec{x}}
-    + \begin{bmatrix}\omega_1^2&\nu\\\nu&\omega_2^2\end{bmatrix} \vec{x}
-      = \begin{bmatrix}Ae^{\text{i}\omega t}\\0\end{bmatrix}\]</p>
-                                    </section>
-                                    <section>Resonance enhancement is broadening</section>
-                                    <section>Phase shift is first Resonance phase</section>
-                                    <section>Shift appears</section>
-                                </section>
-                                <section>
-                                <section><img src="imgs/group.jpg"></section>
-                                <section></section>
-                                </section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="reveal/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+	<section>
+          <p>Pendula of Atomic Collisions</p>
+          <img src="imgs/cover.svg" />
+          <div style="position: absolute; bottom:0; right:0; font-size:12pt;">Matthew Chilcott<br />DWC Symposion 2021</div>
+        </section>
+	<section><!-- Motivation -->
+          <!--<section>Understanding atomic interactions is a core area of exploration</section>-->
+          <section><p>Collisions measure atomic interactions</p><img width="80%" src="https://mchilcott.github.io/WatchingPolesDance/img/Collision.svg" /></section>
+	</section>
+	<section><!-- What we do -->
+          <section><p>Cold = Slow = Sensitive</p><img src="imgs/ColdSensitive.svg" width="100%" /></section>
+          <section><p>Optical Collider</p><img src="https://mchilcott.github.io/WatchingPolesDance/img/Exp9.svg" /></section>
+          <section><img src="imgs/AtomImage.svg"/></section>
+	</section>
+	<section><!-- Resonances-->
+          <section><p>Resonances are changes in the scattering</p><img src="imgs/BeutlerFano283uK.svg" /></section>
+          <section><p>Shape resonances appear in energy: open channel</p><img src="imgs/PotentialsShape.svg" /></section>
+          <section><p>Feshbach resonances in magnetic field: Closed channel</p><img src="imgs/PotentialsFeshbach.svg" /></section>
+          <section><p>We examine a system with both, simultaneously in play</p><img src="imgs/PotentialsFull.svg" /></section>
+	</section>
+        <section><!-- What we observe -->
+          <section>
+            <p>We observe changes in the resonance profile</p>
+            <img src="imgs/BeutlerFano.svg" />
+            
+          </section>
+          <section>
+            <p style="font-size: 20pt;">\[
+              {\color{blue}{\sigma(B, E)}} = \frac{2\pi\hbar}{mE}\sin^2\left(
+              {\color{purple}{\delta_\text{bg}(E)}} +  \tan^{-1}\left[\frac{{\color{orange}{\Gamma(E)}} / 2}{B - {\color{pink}{B_\text{res}(E)}}}\right]
+              \right)\]
+            </p>
+            <img src="imgs/BFParameters.svg" />
+          </section>
+          <section data-auto-animate>
+            <p>Phase Winding = Shape change</p>
+            <img src="imgs/BeutlerFano.svg" width="45%"/>
+            <img src="imgs/ResonancePhase.svg" width="45%" />
+          </section>
+          <section data-auto-animate>
+            <p>Phase Winding = Shape change</p>
+            <img src="imgs/ResonancePhase.svg" width="45%" />
+            <video autoplay loop width="45%" src="imgs/AnimatedQSweep.mp4" onclick="this.paused ? this.play() : this.pause();"></video>
+          </section>
+          <section>
+            <p>The resonance broadens</p>
+            <img src="imgs/BeutlerFano.svg" width="45%"/>
+            <img src="imgs/ResonanceWidth.svg" width="45%" />
+          </section>
+          <section  data-auto-animate>
+            <p>The resonance shifts</p>
+            <img src="imgs/BeutlerFano.svg" width="45%"/>
+            <img src="imgs/ResonancePosition.svg" width="45%" />
+          </section>
+          <section  data-auto-animate>
+            <p>The resonance shifts</p>
+            <img src="imgs/ResonancePosition.svg" width="45%" style="margin-bottom:100px;"/>
+            <img src="imgs/TheoryCentre.svg" width="45%" />
+          </section>
+        </section>
+        <section><!-- QDT -->
+          <section data-auto-animate><p>Quantum Defect Theory: Open Channel</p><img src="imgs/QDTExplained.svg" /><p style="font-size:15pt;">\[  \begin{pmatrix} f \\ g \end{pmatrix} =
+              \begin{pmatrix} C^{-1} & 0 \\ C \tan \lambda & C \end{pmatrix}
+              \begin{pmatrix} \hat{f} \\ \hat{g} \end{pmatrix}\]</p></section>
+          <section data-auto-animate><p>QDT parameters</p><p style="font-size:20pt;">\[  \begin{pmatrix} f \\ g \end{pmatrix} =
+              \begin{pmatrix} C^{-1} & 0 \\ C \tan \lambda & C \end{pmatrix}
+              \begin{pmatrix} \hat{f} \\ \hat{g} \end{pmatrix}\]</p><img src="imgs/tlc2.svg" /></section>
+          <section data-auto-animate><p>Broadening is wavefunction enhancement at short range</p><p style="font-size:20pt;">\[ \Gamma(E) = C^{-2}(E) \bar{\Gamma}_B \]</p><img width="45%" src="imgs/tlc2.svg" /><img width="45%" src="imgs/ResonanceWidth.svg" /></section>
+          <section data-auto-animate><p>Shift is phase change</p><p style="font-size:20pt;">\[B_\text{res}(E) = B_0 + \frac{E}{\delta\mu} - \frac{\bar{\Gamma}_B}{2} \tan\lambda\]</p><img width="45%" src="imgs/tlc2.svg" /><img width="45%" src="imgs/ResonancePosition.svg" /></section>
+        </section>
+        <section><!-- Pendula -->
+          <section>
+            <img src="imgs/cover.svg" />
+          </section>
+          <section>
+            <p>Two channels $\quad\Rightarrow\quad$ two pendula</p>
+            <img width="100%" src="imgs/pendula.svg" />
+            <p style="font-size:20pt;">\[\ddot{\vec{x}}
+              + \begin{bmatrix}\gamma_1&0\\0&\gamma_2\end{bmatrix}\dot{\vec{x}}
+              + \begin{bmatrix}\omega_1^2&\nu\\\nu&\omega_2^2\end{bmatrix} \vec{x}
+              = \begin{bmatrix}Ae^{\text{i}\omega t}\\0\end{bmatrix}\]</p>
+          </section>
+          <section><p>Resonance enhancement is broadening</p><img width="45%" src="imgs/PendulaWidth.svg" /><video autoplay loop width="45%" src="imgs/Pendula.mp4" onclick="this.paused ? this.play() : this.pause();"></video></section>
+          <section><p>Phase shift is first Resonance phase</p><img src="imgs/PendulaPhase.svg" /></section>
+          <section><p>Shift appears</p><img src="imgs/PendulaPosition.svg" /></section>
+        </section>
+        <section>
+          <section><img src="imgs/group.jpg" /></section>
+          <section><img width="45%" src="imgs/QDTExplained.svg" /><img width="45%" src="imgs/tlc2.svg" /><img width="90%" src="imgs/pendula.svg" /></section>
+        </section>
+      </div>
+    </div>
 
-		<script src="reveal/dist/reveal.js"></script>
-		<script src="reveal/plugin/notes/notes.js"></script>
-		<script src="reveal/plugin/math/math.js"></script>
-		<script src="reveal/plugin/markdown/markdown.js"></script>
-		<script src="reveal/plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				controls: false,
-                                progress: false,
-                                navigationMode: 'linear',
-                                // Learn about plugins: https://revealjs.com/plugins/
-                                plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
-                        });
-		</script>
-	</body>
+    <script src="reveal/dist/reveal.js"></script>
+    <script src="reveal/plugin/notes/notes.js"></script>
+    <script src="reveal/plugin/math/math.js"></script>
+    <script src="reveal/plugin/markdown/markdown.js"></script>
+    <script src="reveal/plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+	  controls: false,
+          progress: false,
+          navigationMode: 'linear',
+          // Learn about plugins: https://revealjs.com/plugins/
+          plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath ]
+      });
+    </script>
+  </body>
 </html>
