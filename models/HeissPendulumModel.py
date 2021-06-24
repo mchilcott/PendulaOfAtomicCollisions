@@ -529,8 +529,15 @@ if True:
     s1, = ax.plot([],[], color=p1.get_color(), alpha=0.6)
     s2, = ax.plot([],[], color=p2.get_color(), alpha=0.6)
     spr, = ax.plot([],[], linewidth=2, alpha=0.6)
+
+    tr1, = ax.plot([],[], color=p1.get_color(), alpha=0.6)
+    tr2, = ax.plot([],[], color=p2.get_color(), alpha=0.6)
     
     omega = 1
+    amp1 = 0.8
+    amp2 = 0.3
+    phase1 = 0
+    phase2 = np.pi/2
     
     def init():
         ax.set_ylim([0,3])
@@ -542,20 +549,29 @@ if True:
         
     def animate(frame):
 
-        p1_y = 1
-        p2_y = 1 
-        p1_x = 1 + 0.8 * np.sin(2*np.pi*omega*frame)
-        p2_x = 3 + 0.5 * np.cos(2*np.pi*omega*frame)
+        d1 = amp1 * np.sin(2*np.pi*omega*frame + phase1)
+        d2 = amp2 * np.sin(2*np.pi*omega*frame + phase2)
+        p1_y = 1.25 + 0.3 * d1**2
+        p2_y = 1.25 + 0.3 * d2**2
+        p1_x = 1 + d1
+        p2_x = 3 + d2
 
         p1.set_data([p1_x], [p1_y])
-        s1.set_data([1, p1_x], [2.5, p1_y])
+        s1.set_data([1, p1_x], [3, p1_y])
 
         p2.set_data([p2_x], [p2_y])
-        s2.set_data([3, p2_x], [2.5, p2_y])
+        s2.set_data([3, p2_x], [3, p2_y])
 
         spr.set_data([p1_x, p2_x], [p1_y, p2_y])
+
+
+        x = np.linspace(0,1,50)
         
-        return p1, p2, s1, s2, spr
+        tr1.set_data(1 + amp1 * np.sin(2*np.pi*omega*(frame - x) + phase1), 1-x)
+        tr2.set_data(3 + amp2 * np.sin(2*np.pi*omega*(frame - x) + phase2), 1-x)
+        
+
+        return p1, p2, s1, s2, spr, tr1, tr2
     
     actor = ani.FuncAnimation(fig, animate, init_func=init, frames=np.linspace(0,1, 51)[:-1],
                               blit=True, interval=1000/24, repeat=False)

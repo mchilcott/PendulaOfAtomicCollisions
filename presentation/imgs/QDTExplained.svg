@@ -16,7 +16,7 @@
    width="552.64453pt"
    id="svg277"
    sodipodi:docname="QDTExplained.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -26,14 +26,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1411"
+     inkscape:window-width="1920"
+     inkscape:window-height="1019"
      id="namedview279"
      showgrid="false"
      inkscape:zoom="2.108317"
-     inkscape:cx="319.36246"
-     inkscape:cy="234.02312"
-     inkscape:window-x="2560"
+     inkscape:cx="215.04296"
+     inkscape:cy="102.52631"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="figure_1"
@@ -54,7 +54,7 @@
             <dc:title>Matplotlib v3.3.0, https://matplotlib.org/</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -95,11 +95,11 @@
        inkscape:collect="always"
        id="linearGradient1602">
       <stop
-         style="stop-color:#fee0b4;stop-opacity:1"
+         style="stop-color:#fdc169;stop-opacity:0.66169155"
          offset="0"
          id="stop1598" />
       <stop
-         style="stop-color:#a9c5e2;stop-opacity:1"
+         style="stop-color:#6396cb;stop-opacity:0.65671641"
          offset="1"
          id="stop1600" />
     </linearGradient>
@@ -204,7 +204,7 @@
        x="-101.15947"
        y="15.697299" />
     <rect
-       style="opacity:1;fill:url(#linearGradient1604);fill-opacity:1;fill-rule:nonzero;stroke:#ef2929;stroke-width:2.30443573;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:markers fill stroke"
+       style="opacity:0.445;fill:url(#linearGradient1604);fill-opacity:1;fill-rule:nonzero;stroke:#ef2929;stroke-width:2.30443573;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0;paint-order:markers fill stroke"
        id="rect1596"
        width="457.61145"
        height="44.716888"
@@ -581,32 +581,32 @@
        id="text1092"
        y="324.49646"
        x="28.441814"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ce5c00;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffd5b3;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        xml:space="preserve"><tspan
          y="324.49646"
          x="28.441814"
-         style="text-align:center;text-anchor:middle;fill:#ce5c00;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round"
+         style="text-align:center;text-anchor:middle;fill:#ffd5b3;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1;"
          id="tspan1090"
          sodipodi:role="line">Short Range</tspan><tspan
          y="341.99646"
          x="28.441814"
-         style="text-align:center;text-anchor:middle;fill:#ce5c00;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round"
+         style="text-align:center;text-anchor:middle;fill:#ffd5b3;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1;"
          sodipodi:role="line"
          id="tspan3223">(&gt;30 parameter model)</tspan></text>
     <text
        id="text1119"
        y="324.30045"
        x="247.86728"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#204a87;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:14px;line-height:125%;font-family:'CMU Sans Serif';-inkscape-font-specification:'CMU Sans Serif';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#d2e0f4;fill-opacity:1;stroke:none;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
        xml:space="preserve"><tspan
          y="324.30045"
          x="247.86728"
-         style="text-align:center;text-anchor:middle;fill:#204a87;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round"
+         style="text-align:center;text-anchor:middle;fill:#d2e0f4;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1;"
          id="tspan1117"
          sodipodi:role="line">Long Range</tspan><tspan
          y="341.80045"
          x="247.86728"
-         style="text-align:center;text-anchor:middle;fill:#204a87;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round"
+         style="text-align:center;text-anchor:middle;fill:#d2e0f4;stroke-width:0.75px;stroke-linecap:butt;stroke-linejoin:round;fill-opacity:1;"
          sodipodi:role="line"
          id="tspan3225">(van der Waals)</tspan></text>
     <text
