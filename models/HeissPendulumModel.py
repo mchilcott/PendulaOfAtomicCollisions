@@ -10,7 +10,7 @@ import matplotlib.animation as ani
 import matplotlib.cm as cm
 import matplotlib
 
-plt.style.use('https://raw.githubusercontent.com/mchilcott/PendulaOfAtomicCollisions/main/presentation/plots.mplstyle')
+plt.style.use('../presentation/plots.mplstyle')
 
 """Fano Coupling
 
@@ -21,8 +21,6 @@ We follow the model in stacks.iop.org/PhysScr/74/259.
 This paper fixes the relative detuning of the two resonators, and examines the system while changing the drive energy. (Presumably analytically.)
 
 We wish to fix the drive energy, and vary the relative detuning, with one very broad resonance, and one small resonance, and see what the shape does.
-
-See also Notes.org
 
 """
 
@@ -102,14 +100,6 @@ def run_sweep(param):
         c.append(c1[0])
 
     return omega, np.array(c)
-
-if False:
-
-    for p in [0.8, 1, 1.2, 1.4, 10]:
-        omega, c = run_sweep(p)
-        plt.plot(omega, c, label=str(p))
-
-    plt.legend()
 
     
 if False:
@@ -352,7 +342,7 @@ if False:
 
 
 
-if True:
+if False:
 
     doNu = False
 
@@ -460,7 +450,7 @@ if False:
     actor = ani.FuncAnimation(fig, animate, frames=range(len(omega_drive)),
                               blit=True, interval=1000/12, repeat=False)
 
-if True:
+if False:
     
     def beutler_fano(B, A, delta_bg, gamma, B0, c):
         y = A * np.sin(delta_bg + np.arctan((gamma / 2.0) / (B - B0)))**2 + c
@@ -515,7 +505,7 @@ if True:
     
     _, ax = plt.subplots()
     ax.plot(omega_drive, bg_phase)
-    ax.set_ylabel('Background Pase')
+    ax.set_ylabel('Background Phase')
     ax.set_xlabel('Drive Frequency')
     plt.savefig('PendulaPhase.svg')
 
@@ -534,10 +524,17 @@ if True:
     tr2, = ax.plot([],[], color=p2.get_color(), alpha=0.6)
     
     omega = 1
-    amp1 = 0.8
-    amp2 = 0.3
-    phase1 = 0
-    phase2 = np.pi/2
+    
+    
+    #amp1 = 0.8
+    #amp2 = 0.3
+    #phase1 = 0
+    #phase2 = np.pi/2
+    
+    amp1, phase1, amp2, phase2 = run_expt(omega_drive=omega, omega_osc=(1, 1.5), gamma=(0.1, 0.1), nu=0.5)[:4]
+
+    amp1 /= 12
+    amp2 /= 12
     
     def init():
         ax.set_ylim([0,3])
@@ -574,8 +571,8 @@ if True:
         return p1, p2, s1, s2, spr, tr1, tr2
     
     actor = ani.FuncAnimation(fig, animate, init_func=init, frames=np.linspace(0,1, 51)[:-1],
-                              blit=True, interval=1000/24, repeat=False)
-    actor.save("Pendula.mp4", writer=ani.FFMpegWriter(fps=24), dpi=200)
+                              blit=True, interval=1000/24, repeat=True)#False)
+    #actor.save("Pendula.mp4", writer=ani.FFMpegWriter(fps=24), dpi=200)
     
 plt.show() 
 
