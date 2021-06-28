@@ -104,8 +104,8 @@ if False:
     plt.plot(omega_dr, phase1)
     plt.xlabel("Drive Frequency")
     plt.ylabel("Phase")
-    #plt.gca().set_xticklabels([])
-    plt.gca().set_yticklabels([])
+    plt.gca().set_yticks([ 0, -np.pi/2, -np.pi])
+    plt.gca().set_yticklabels([ "0", r"$-\pi/2$", r"$-\pi$"])
     plt.savefig("PendulumPhase.svg")
     
     plt.show()
