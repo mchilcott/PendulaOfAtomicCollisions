@@ -53,21 +53,29 @@
             <img width="50%" src="imgs/PendulumPhase.svg" />
           </section>
         </section>
+        <section>
+          <section>
+            <img src="imgs/cover.svg" />
+          </section>
           <section>
             <img src="imgs/Exp.svg" />
           </section>
+          <section>
+            <img src="imgs/AtomImageBasic.svg" />
+          </section>
           <section data-auto-animate>
             <p>We see the same thing in collisions.</p>
-            <video autoplay loop width="10%" style="margin: 0 10pt;" src="imgs/PendulumDrive0_5.mp4"></video>
-            <video autoplay loop width="10%" style="margin: 0 10pt;" src="imgs/PendulumDrive1_0.mp4"></video>
-            <video autoplay loop width="10%" style="margin: 0 10pt;" src="imgs/PendulumDrive1_5.mp4"></video>
+            <video autoplay loop width="15%" style="margin: 0 10pt;" src="imgs/PendulumDrive0_5.mp4"></video>
+            <video autoplay loop width="15%" style="margin: 0 10pt;" src="imgs/PendulumDrive1_0.mp4"></video>
+            <video autoplay loop width="15%" style="margin: 0 10pt;" src="imgs/PendulumDrive1_5.mp4"></video>
             <br />
-            <img src="imgs/ResonanceScatteringImages.svg" />
+            <img  width="100%" src="imgs/ResonanceScatteringImages.svg" />
           </section>
-          <section>
-            <img src="imgs/ResonanceScatteringImages.svg" />
-            <img src="imgs/BeutlerFano283uK.svg" />
+          <section data-auto-animate>
+            <img width="100%" src="imgs/ResonanceScatteringImages.svg" />
+            <img  width="50%" src="imgs/BeutlerFano283uK.svg" />
           </section>
+        </section>
 	</section>
         <section><!-- Atomic Resonances-->
           <section><p>Shape Resonance in energy</p><img src="imgs/PotentialsShape.svg" /></section>
@@ -76,11 +84,11 @@
 	</section>
         <section>
           <section>
-            <video autoplay loop src="imgs/Pendula.mp4"></video>
+            <video autoplay loop width="60%" src="imgs/Pendula.mp4"></video>
           </section>
           <section>
-            <video autoplay loop src="imgs/Pendula.mp4"></video>
-            <img src="imgs/PendulaAmp.svg" />
+            <video autoplay loop width="45%" src="imgs/Pendula.mp4"></video>
+            <img width="45%" src="imgs/PendulaAmp.svg" />
           </section>
           <section>
             <img src="imgs/Fano3D.svg" />
@@ -103,18 +111,23 @@
           <section data-auto-animate>
             <p>Phase Winding</p>
             <img src="imgs/PendulumPhase.svg" width="40%"/>
-            <img src="imgs/ResonancePhase.svg" width="40%" />
             <video autoplay loop src="imgs/PendulumDrive1_0.mp4" width="15%"></video>
+            <img src="imgs/ResonancePhase.svg" width="40%" />
           </section>
           <section data-auto-animate>
             <p>Phase Winding = Shape change</p>
             <img src="imgs/ResonancePhase.svg" width="45%" />
             <video autoplay loop width="45%" src="imgs/AnimatedQSweep.mp4"></video>
           </section>
-          <section>
+          <section  data-auto-animate>
             <p>The resonance broadens</p>
             <img src="imgs/ResonanceWidth.svg" width="45%" />
             <img src="imgs/PendulumAmp.svg" width="45%" />
+          </section>
+          <section data-auto-animate>
+            <p>The resonance broadens</p>
+            <img src="imgs/PendulumAmp.svg" width="45%" />
+            <video width="40%" loop autoplay src="imgs/Pendula.mp4">
           </section>
           <section  data-auto-animate>
             <p>The resonance shifts</p>
@@ -124,7 +137,13 @@
         <section><!-- QDT -->
           <section data-auto-animate>
             <p>Quantum Defect Theory</p>
-            <img src="imgs/QDTExplained.svg" />
+            <img src="imgs/QDTExplained1.svg" />
+          </section>
+          <section data-auto-animate>
+            <p>Quantum Defect Theory</p>
+            <img src="imgs/QDTExplained2.svg" />
+          </section>
+          <section data-auto-animate>
             <p style="font-size:15pt;">
               \[
                 \begin{pmatrix} f \\ g \end{pmatrix} =
@@ -132,51 +151,49 @@
                 \begin{pmatrix} \hat{f} \\ \hat{g} \end{pmatrix}
               \]
             </p>
+            <img src="imgs/QDTExplained2.svg" />
           </section>
           <section data-auto-animate>
             <p>QDT parameters</p>
             <p style="font-size:20pt;">
             \[
               \begin{pmatrix} f \\ g \end{pmatrix} =
-              \begin{pmatrix} C^{-1} & 0 \\ C \tan \lambda & C \end{pmatrix}
+              \begin{pmatrix} {\color{PSpink}C}^{-1} & 0 \\ {\color{PSpink}C} {\color{PSblue}\tan \lambda} & C \end{pmatrix}
               \begin{pmatrix} \hat{f} \\ \hat{g} \end{pmatrix}
             \]
             </p>
             <img src="imgs/tlc2.svg" />
           </section>
           <section data-auto-animate>
-            <p>Pendulum Amplitude is Wavefunction Amplitude <span style="font-size:10pt;">(short-range)</span></p>
+            <p>Pendulum Amplitude is Wavefunction Amplitude <br /> <span style="font-size:10pt;">(at short-range)</span></p>
             <p style="font-size:20pt;">
               \[
                 \Gamma(E) = C^{-2}(E) \bar{\Gamma}_B
               \]
             </p>
-            <img width="45%" src="imgs/tlc2.svg" />
-            <img width="45%" src="imgs/ResonanceWidth.svg" />
-            <img src="imgs/PendulumAmp.svg" width="45%" />
+            <img src="imgs/ResonanceWidth.svg" />
           </section>
           <section data-auto-animate>
-            <p>Shift is related to first pendulum width</p>
             <p style="font-size:20pt;">
               \[
                 B_\text{res}(E) = B_0 + \frac{E}{\delta\mu} - \frac{\bar{\Gamma}_B}{2} \tan\lambda
               \]
             </p>
-            <img width="45%" src="imgs/tlc2.svg" />
             <img width="45%" src="imgs/ResonancePosition.svg" />
           </section>
-          <section><p>How does the shift change?</p><img width="100%" src="imgs/ClassicalShift.svg" /></section>
+          <section data-auto-animate><p>Shift is related to the first pendulum width</p><img width="80%" src="imgs/ClassicalShift.svg" /></section>
+          <section data-auto-animate><img width="60%" src="imgs/ClassicalShift.svg" /><p>\[\tan\lambda \sim \frac{\omega_1^2 - \omega^2}{\left|\omega_1^2 + 2i\gamma_1\omega - \omega^2\right|^2}\]</p></section>
         </section>
         <section> <!-- Concluding -->
-          <section><img src="imgs/Fano3D.svg" /><video loop autoplay src="imgs/Pendula.mp4"></section>
+          <section><img width="35%" src="imgs/PotentialsFull.svg" />\[\Updownarrow\]<div><video width="40%" loop autoplay src="imgs/Pendula.mp4"></section>
           <section><img src="imgs/group.jpg" /></section>
-          <section><img src="imgs/Fano3D.svg" /><img src="imgs/PotentialsFull.svg" /><video loop autoplay src="imgs/Pendula.mp4"></video></section>
+          <section><img width="40%" src="imgs/Fano3D.svg" /><img width="40%" src="imgs/PotentialsFull.svg" /><video width="40%" loop autoplay src="imgs/Pendula.mp4"></video> <img width="40%" src="imgs/ResonancePosition.svg" /></section>
         </section>
         <section>
             <section>Bonus Round</section>
             <section><img src="imgs/TheoryCentre.svg" /></section>
             <section><img src="imgs/AtomImage.svg" /></section>
-            <section><img src="imgs/WavefunctionAmplitude.svg" /></section>
+            <section><img src="imgs/ShapeEnhancement.svg" /></section>
         </section>
       </div>
     </div>
