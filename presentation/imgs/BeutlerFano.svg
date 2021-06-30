@@ -15,8 +15,8 @@
    viewBox="0 0 460.8 388.8"
    width="460.8pt"
    id="svg1310"
-   sodipodi:docname="BeutlerFano.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+   sodipodi:docname="BeutlerFanoClean.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
   <sodipodi:namedview
      pagecolor="#ffffff"
      bordercolor="#666666"
@@ -26,14 +26,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="2560"
-     inkscape:window-height="1411"
+     inkscape:window-width="1600"
+     inkscape:window-height="835"
      id="namedview1312"
      showgrid="false"
-     inkscape:zoom="2.1113927"
-     inkscape:cx="307.19999"
-     inkscape:cy="244.35294"
-     inkscape:window-x="2560"
+     inkscape:zoom="1.0556964"
+     inkscape:cx="268.37036"
+     inkscape:cy="247.76221"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="figure_1" />
@@ -50,7 +50,7 @@
             <dc:title>Matplotlib v3.3.0, https://matplotlib.org/</dc:title>
           </cc:Agent>
         </dc:creator>
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -950,29 +950,6 @@
            style="stroke-linecap:butt;stroke-linejoin:round" />
       </defs>
       <use
-         transform="scale(0.996264)"
-         xlink:href="#URW_Palladio_L_Italic-113"
-         id="use306"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(1.038107,0,0,1.038107,76.290647,0)"
-         xlink:href="#CMMI10-60"
-         id="use308"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <path
-         d="m 212.10491,68.742216 c -15.44209,0 -23.30324,-12.266501 -23.30324,-36.410336 0,-11.690535 2.08593,-21.746575 5.57285,-26.6344952 3.48693,-4.90348692 9.05978,-7.6899128 15.23973,-7.6899128 15.05293,0 22.61831,12.966999 22.61831,38.51183 0,21.839975 -6.47572,32.222914 -20.12765,32.222914 z m -1.79016,-3.486924 c 9.66687,0 13.54296,-9.77584 13.54296,-33.732876 0,-21.232877 -3.78269,-30.02802 -12.95143,-30.02802 -9.65131,0 -13.74533,10.087173 -13.74533,34.433374 0,21.046078 3.68929,29.327522 13.1538,29.327522 z"
-         id="use310"
-         inkscape:connector-curvature="0"
-         style="stroke-width:0.99626398;stroke-linecap:butt;stroke-linejoin:round" />
-      <use
          transform="matrix(0.996264,0,0,0.996264,462.66745,0)"
          xlink:href="#Nimbus_Sans_L_Regular-51"
          id="use312"
@@ -1682,29 +1659,6 @@
            inkscape:connector-curvature="0"
            style="stroke-linecap:butt;stroke-linejoin:round" />
       </defs>
-      <use
-         transform="scale(0.996264)"
-         xlink:href="#URW_Palladio_L_Italic-113"
-         id="use554"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(1.038107,0,0,1.038107,76.290647,0)"
-         xlink:href="#CMSY10-25"
-         id="use556"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <path
-         d="m 212.10491,68.742216 c -15.44209,0 -23.30324,-12.266501 -23.30324,-36.410336 0,-11.690535 2.08593,-21.746575 5.57285,-26.6344952 3.48693,-4.90348692 9.05978,-7.6899128 15.23973,-7.6899128 15.05293,0 22.61831,12.966999 22.61831,38.51183 0,21.839975 -6.47572,32.222914 -20.12765,32.222914 z m -1.79016,-3.486924 c 9.66687,0 13.54296,-9.77584 13.54296,-33.732876 0,-21.232877 -3.78269,-30.02802 -12.95143,-30.02802 -9.65131,0 -13.74533,10.087173 -13.74533,34.433374 0,21.046078 3.68929,29.327522 13.1538,29.327522 z"
-         id="use558"
-         inkscape:connector-curvature="0"
-         style="stroke-width:0.99626398;stroke-linecap:butt;stroke-linejoin:round" />
       <use
          transform="matrix(0.996264,0,0,0.996264,462.66745,0)"
          xlink:href="#Nimbus_Sans_L_Regular-51"
@@ -2484,29 +2438,6 @@
              id="Nimbus_Sans_L_Regular-56"
              d="M 39.09375,37.484375 C 46.40625,41.875 48.796875,45.46875 48.796875,52.15625 48.796875,63.21875 40.09375,71 27.5,71 15,71 6.203125,63.21875 6.203125,52.15625 c 0,-6.578125 2.390625,-10.171875 9.59375,-14.671875 C 7.703125,33.59375 3.703125,27.71875 3.703125,19.9375 3.703125,6.96875 13.5,-2 27.5,-2 c 14,0 23.796875,8.984375 23.796875,21.84375 0,7.875 -4,13.75 -12.203125,17.640625 z M 27.5,63.1875 c 7.5,0 12.296875,-4.375 12.296875,-11.234375 C 39.796875,45.375 34.90625,41 27.5,41 20.09375,41 15.203125,45.375 15.203125,52.046875 15.203125,58.8125 20.09375,63.1875 27.5,63.1875 Z m 0,-29.609375 c 8.796875,0 14.796875,-5.578125 14.796875,-13.84375 0,-8.34375 -6,-13.921875 -15,-13.921875 -8.59375,0 -14.59375,5.671875 -14.59375,13.921875 0,8.265625 6,13.84375 14.796875,13.84375 z" />
         </defs>
-        <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="use811"
-           xlink:href="#URW_Palladio_L_Italic-113"
-           transform="scale(0.996264)" />
-        <use
-           height="100%"
-           width="100%"
-           y="0"
-           x="0"
-           style="stroke-linecap:butt;stroke-linejoin:round"
-           id="use813"
-           xlink:href="#CMMI10-62"
-           transform="matrix(1.038107,0,0,1.038107,76.290647,0)" />
-        <path
-           d="m 212.10491,68.742216 c -15.44209,0 -23.30324,-12.266501 -23.30324,-36.410336 0,-11.690535 2.08593,-21.746575 5.57285,-26.6344952 3.48693,-4.90348692 9.05978,-7.6899128 15.23973,-7.6899128 15.05293,0 22.61831,12.966999 22.61831,38.51183 0,21.839975 -6.47572,32.222914 -20.12765,32.222914 z m -1.79016,-3.486924 c 9.66687,0 13.54296,-9.77584 13.54296,-33.732876 0,-21.232877 -3.78269,-30.02802 -12.95143,-30.02802 -9.65131,0 -13.74533,10.087173 -13.74533,34.433374 0,21.046078 3.68929,29.327522 13.1538,29.327522 z"
-           id="use815"
-           inkscape:connector-curvature="0"
-           style="stroke-width:0.99626398;stroke-linecap:butt;stroke-linejoin:round" />
         <use
            height="100%"
            width="100%"
@@ -3796,7 +3727,7 @@
        inkscape:connector-curvature="0" />
     <g
        style="fill:#e6e6e6;stroke-linecap:butt;stroke-linejoin:round"
-       transform="matrix(0.14,0,0,-0.14,80.911881,294.72307)"
+       transform="matrix(0.14,0,0,-0.14,62.911881,294.72307)"
        id="g1250">
       <defs
          id="defs1218">
@@ -3816,78 +3747,6 @@
            inkscape:connector-curvature="0"
            style="stroke-linecap:butt;stroke-linejoin:round" />
       </defs>
-      <use
-         transform="scale(1.038107)"
-         xlink:href="#CMSY10-106"
-         id="use1220"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(0.996264,0,0,0.996264,31.282699,0)"
-         xlink:href="#URW_Palladio_L_Italic-113"
-         id="use1222"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(1.038107,0,0,1.038107,79.899413,0)"
-         xlink:href="#CMSY10-106"
-         id="use1224"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(0.996264,0,0,0.996264,137.63198,0)"
-         xlink:href="#Nimbus_Sans_L_Regular-108"
-         id="use1226"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(0.996264,0,0,0.996264,159.74877,0)"
-         xlink:href="#Nimbus_Sans_L_Regular-97"
-         id="use1228"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(0.996264,0,0,0.996264,215.14044,0)"
-         xlink:href="#Nimbus_Sans_L_Regular-114"
-         id="use1230"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(0.996264,0,0,0.996264,248.31567,0)"
-         xlink:href="#Nimbus_Sans_L_Regular-103"
-         id="use1232"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
-      <use
-         transform="matrix(0.996264,0,0,0.996264,303.70735,0)"
-         xlink:href="#Nimbus_Sans_L_Regular-101"
-         id="use1234"
-         style="stroke-linecap:butt;stroke-linejoin:round"
-         x="0"
-         y="0"
-         width="100%"
-         height="100%" />
       <use
          transform="matrix(0.996264,0,0,0.996264,586.047,0)"
          xlink:href="#Nimbus_Sans_L_Regular-49"

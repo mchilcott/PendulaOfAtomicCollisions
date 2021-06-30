@@ -14,13 +14,18 @@ plt.style.use('../presentation/plots.mplstyle')
 
 """Fano Coupling
 
-This is an attempt to explore the Fano resonance that arises from two coupled oscillators.
+This is an attempt to explore the Fano resonance that arises from two
+coupled oscillators.
 
 We follow the model in stacks.iop.org/PhysScr/74/259.
 
-This paper fixes the relative detuning of the two resonators, and examines the system while changing the drive energy. (Presumably analytically.)
+This paper fixes the relative detuning of the two resonators, and
+examines the system while changing the drive energy. (Presumably
+analytically.)
 
-We wish to fix the drive energy, and vary the relative detuning, with one very broad resonance, and one small resonance, and see what the shape does.
+We wish to fix the drive energy, and vary the relative detuning, with
+one very broad resonance, and one small resonance, and see what the
+shape does.
 
 """
 
@@ -92,15 +97,75 @@ def tests():
 
 def run_sweep(param):
     
-    omega = np.linspace(0.5, 1.5, 300)
+    omega = np.linspace(0.5, 2, 300)
     c=[]
 
     for om in omega:
-        c1 = run_expt(om, (1, param), (0.05,0.05), 0.1)
-        c.append(c1[0])
+        c1 = run_expt(om, (1, param), (0.15,0.02), 0.3)
+        c.append(c1)
 
     return omega, np.array(c)
 
+if False:
+    omega, c = run_sweep(1.5)
+
+    plt.plot(omega, c[:,0])
+    #plt.plot(omega, c[:,1])
+    plt.xlabel(r"$\omega$")
+    plt.ylabel(r"Amplitude")
+    plt.tight_layout()
+    plt.savefig("PendulaAmp1.svg")
+
+    plt.figure()
+    plt.plot(omega, c[:,2])
+    #plt.plot(omega, c[:,3])
+    plt.xlabel(r"$\omega$")
+    plt.ylabel(r"Phase")
+    plt.tight_layout()
+    plt.savefig("PendulaPhase1.svg")
+    
+    plt.show()
+    
+if True:
+
+    fig = plt.figure()
+    omega, c = run_sweep(1)
+
+    ln, = plt.plot(omega,c[:,0])
+    plt.axvline(1.3, c=plt.rcParams['axes.prop_cycle'].by_key()['color'][1])
+    plt.xlabel(r"$\omega$")
+    plt.ylabel(r"Amplitude")
+    plt.yticklabels([p)
+    plt.tight_layout()
+    def animate(frame):
+        omega, c = run_sweep(frame)
+        ln.set_data(omega, c[:, 0])
+        return ln,
+    
+    actor = ani.FuncAnimation(fig, animate, frames=np.linspace(1.0,1.6, 101)[:-1],
+                              blit=True, interval=1000/24, repeat=True)#False)
+    actor.save("PendulaSweep.mp4", writer=ani.FFMpegWriter(fps=24), dpi=200)
+
+    plt.show()
+
+if True:
+    omega_2 = np.linspace(1.0, 1.6, 300)
+    c=[]
+
+    for om in omega_2:
+        c1 = run_expt(1.3, (1, om), (0.15,0.02), 0.3)
+        c.append(c1)
+    c = np.array(c)
+
+    plt.plot(omega_2, c[:,0], c=plt.rcParams['axes.prop_cycle'].by_key()['color'][1])
+    #plt.plot(omega, c[:,1])
+    plt.xlabel(r"$\omega_2$")
+    plt.ylabel(r"Amplitude")
+    plt.tight_layout()
+    plt.savefig("PendulaSweepAmp.svg")
+
+    plt.show()
+    
     
 if False:
     fig = plt.figure()
@@ -509,7 +574,7 @@ if False:
     ax.set_xlabel('Drive Frequency')
     plt.savefig('PendulaPhase.svg')
 
-if True:
+if False:
     # Let's try to get an animation going
     fig, ax = plt.subplots()
 
