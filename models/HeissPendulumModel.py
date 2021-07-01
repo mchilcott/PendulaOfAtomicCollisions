@@ -126,7 +126,7 @@ if False:
     
     plt.show()
     
-if True:
+if False:
 
     fig = plt.figure()
     omega, c = run_sweep(1)
@@ -135,7 +135,6 @@ if True:
     plt.axvline(1.3, c=plt.rcParams['axes.prop_cycle'].by_key()['color'][1])
     plt.xlabel(r"$\omega$")
     plt.ylabel(r"Amplitude")
-    plt.yticklabels([p)
     plt.tight_layout()
     def animate(frame):
         omega, c = run_sweep(frame)
@@ -148,7 +147,7 @@ if True:
 
     plt.show()
 
-if True:
+if False:
     omega_2 = np.linspace(1.0, 1.6, 300)
     c=[]
 
@@ -515,7 +514,7 @@ if False:
     actor = ani.FuncAnimation(fig, animate, frames=range(len(omega_drive)),
                               blit=True, interval=1000/12, repeat=False)
 
-if False:
+if True:
     
     def beutler_fano(B, A, delta_bg, gamma, B0, c):
         y = A * np.sin(delta_bg + np.arctan((gamma / 2.0) / (B - B0)))**2 + c
@@ -595,11 +594,12 @@ if False:
     #amp2 = 0.3
     #phase1 = 0
     #phase2 = np.pi/2
-    
-    amp1, phase1, amp2, phase2 = run_expt(omega_drive=omega, omega_osc=(1, 1.5), gamma=(0.1, 0.1), nu=0.5)[:4]
+    gamma1 = 0.1
+                    
+    amp1, phase1, amp2, phase2 = run_expt(omega_drive=omega, omega_osc=(1, 1.5), gamma=(gamma1, 0.1), nu=0.5)[:4]
 
-    amp1 /= 12
-    amp2 /= 12
+    amp1 /= 1.2/gamma1
+    amp2 /= 1.2/gamma1
     
     def init():
         ax.set_ylim([0,3])
@@ -636,8 +636,8 @@ if False:
         return p1, p2, s1, s2, spr, tr1, tr2
     
     actor = ani.FuncAnimation(fig, animate, init_func=init, frames=np.linspace(0,1, 51)[:-1],
-                              blit=True, interval=1000/24, repeat=True)#False)
-    #actor.save("Pendula.mp4", writer=ani.FFMpegWriter(fps=24), dpi=200)
+                              blit=True, interval=1000/24, repeat=False)
+    actor.save("Pendula.mp4", writer=ani.FFMpegWriter(fps=24), dpi=200)
     
 plt.show() 
 
