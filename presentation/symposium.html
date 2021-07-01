@@ -152,6 +152,7 @@
           </section>
         </section>
         <section><!-- QDT -->
+	  <!--
           <section data-auto-animate>
             <p>Quantum Defect Theory</p>
             <img src="imgs/QDTExplained1.svg" />
@@ -160,6 +161,11 @@
             <p>Quantum Defect Theory</p>
             <img src="imgs/QDTExplained2.svg" />
           </section>
+	  -->
+	  <section>
+	    <p>Quantum Defect Theory</p>
+	    <svg data-src="imgs/QDTExplainedFrag.svg"></svg>
+	  </section>
           <section data-auto-animate>
             <p style="font-size:15pt;">
               \[
@@ -222,6 +228,8 @@
     <script src="reveal/plugin/math/math.js"></script>
     <script src="reveal/plugin/markdown/markdown.js"></script>
     <script src="reveal/plugin/highlight/highlight.js"></script>
+    <script src="loadSVG.js"></script>
+    
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -242,6 +250,7 @@
       videos.forEach((vid) => {
         vid.onclick = videoClick;
       })
+      loadDataSrcSVG();
     </script>
   </body>
 </html>
