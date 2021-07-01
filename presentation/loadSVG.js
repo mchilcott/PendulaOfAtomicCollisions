@@ -9,6 +9,9 @@ function replaceAttributes(new_, old) {
 /** embed SVGs via data-src
  * e.g. <svg data-src="images/test.svg"></svg>.
  * Useful for styling and using class="fragment" in SVG code
+ * Simply load this file, then run 
+ *    loadDataSrcSVG();
+ * in a script tag at the bottom of the page
  */
 function loadDataSrcSVG() {
 	let svgsToLoad = [ ...document.querySelectorAll('svg[data-src]') ]
